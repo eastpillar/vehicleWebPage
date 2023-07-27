@@ -74,7 +74,7 @@ h1{
     transition: all 0.4s ease-in-out;
 }
 #main-content{
-    display: grid;
+    display: inline-grid;
     grid-template-columns: repeat(auto-fit, minmax(400px));
     margin-left: 110px;
     height: 600px;
@@ -101,13 +101,16 @@ img[src*=logo]{
     line-height: 30px;
 }
 #main-content .each-content{
-    float: left;
+    display: inline-grid;
     padding: 0;
     margin: 10px;
     overflow: hidden;
     position: relative;
+    grid-template-columns: repeat(auto-fit,minmax(300px));
 }
 #main-content .each-content img{
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px));
     margin:0;
     padding:0;
     float:left;
@@ -116,6 +119,8 @@ img[src*=logo]{
     height: 300px;
 }
 #main-content .caption{
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px));
     position: absolute;
     top: 200px;
     width: 450px;
